@@ -1,0 +1,124 @@
+/* Google Fonts CDN */
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap');
+
+/* Google Fonts CDN */
+
+/* Common CSS */
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Common CSS */
+
+/* Navbar */
+#navbar{
+    background: rgba(255, 144, 14, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.nav-logo a{
+    font-size: 35px;
+    font-weight: 600;
+    color:rgba(19, 19, 19, 1);
+
+}
+.nav-menu ul{
+    display: flex;
+    
+    
+}
+.nav-menu li{
+    list-style: none;
+    margin-left: 20px;
+    
+    
+}
+.nav-menu ul li a{
+    color:rgba(58, 58, 58, 1);
+    font-size: 18px;
+    font-weight: 500;
+}
+.nav-menu ul li a:hover{
+    color: #FF900E;
+    transition: all linear 0.5s;
+}
+/* Navbar*/
+
+/* Banner */
+
+#banner{
+    background: rgba(255, 144, 14, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.banner-text{
+    text-align: center;
+}
+.title{
+
+}
+.sub-title{
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+}
+.btn-primary{
+    background: #ff900E;
+    padding: 20px 25px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.btn-primary:hover{
+    color: #FF900E;
+    background: white;
+    transition: all linear .5s;
+}
+.banner-img img{
+    margin: 50px 20%;
+}
+/* Banner */
+
+
+/* Responsive (Mobile Device)  */
+
+@media only screen and (max-width:576px) {
+    #navbar , .nav-menu ul{
+        padding-top: 20px;
+        flex-direction: column;
+    }
+    .nav-logo a{
+        font-size: 20px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    .btn-primary{
+        padding: 15px 20px;
+        font-size: 16px;
+
+    }
+    .banner-img img{
+        margin-bottom: 15px;
+    }
+}
+
+/* Responsive (Mobile Device)  */
