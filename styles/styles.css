@@ -116,6 +116,9 @@ a{
     grid-template-columns: repeat(2,1fr);
     gap: 15px;
 }
+.feature-title{
+    font-size: 40px;
+}
 .feature-sub-title{
     margin: 25px 0px;
     color: #727272;
@@ -158,15 +161,14 @@ a{
     padding: 24px 32px;
     background: rgb(255, 144, 14);
     position: relative;
-    top: 287px;
-    right: 345px;
+    top: 270px;
+    right: 320px;
     border-radius: 5px;
     color: white;
     font-weight: 700;
     font-size: 25px;
     text-align: center;
 }
-
 /* Experiance Part End */
 
 /* Some Facts part Start */
@@ -188,12 +190,21 @@ a{
 .fact-items{
     display: flex;
     justify-content: space-around;
+    gap: 30px;
+    align-items: center;
 }
 .item{
+    padding-top: 50px;
+    margin-bottom: 50px;
     text-align: center;
-    padding: 25px 25px;
+    height: 200px;
+    width: 300px;
     border-radius: 5px;
-    border: 2px solid #FF900E;
+    border: 4px solid #FF900E;
+}
+.item p{
+    font-size: 20px;
+    font-weight: 700;
 }
 .item:hover{
     background: #FF900E;
@@ -204,6 +215,53 @@ a{
     font-size: 35px;
 }
 /* Some Facts part End */
+
+/* Sponsor Part Start */
+
+#sponsor{
+    display: flex;
+    padding-bottom: 30px;
+    padding-top: 100px;
+}
+.sponsor{
+    width: 80%;
+    margin: 0 auto;
+
+}
+.sponsor-text{
+    text-align: center;
+}
+.sponsor-title{
+    font-weight: 700;
+    font-size: 45px;
+}
+.sponsor-sub-title{
+    font-weight: 400;
+    font-size: 16px;
+}
+.sponsor-companys{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+.company img{
+    filter: grayscale(100%);
+}
+
+
+/* Sponsor Part End */
+
+/* Footer Part Start */
+
+.footer-text{
+    text-align: center;
+    margin: 100px auto;
+    background:rgba(255, 144, 14, 0.1);
+    font-weight: 600;
+    color: #727272;
+}
+
+/* Footer Part End */
 
 
 /* Responsive (Mobile Device)  */
@@ -245,6 +303,7 @@ a{
     .experiance-btn {
         margin-left: 700px;
         margin-top: -250px;
+        padding: 24px 105px;
     }
     #some-facts{
         margin-top: 200px;
@@ -252,7 +311,13 @@ a{
     .item{
         margin-top: 10px;
     }
-    
+    .sponsor-companys{
+        flex-direction: column;
+        align-items: center;
+    }
+    .company img{
+        margin-top: 30px;
+    }
     
 }
 
