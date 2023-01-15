@@ -215,7 +215,60 @@ a{
     font-size: 35px;
 }
 /* Some Facts part End */
+/* Our Team Section part Start */
 
+
+.our-team{
+    width: 80%;
+    margin: 0 auto;
+    background: #ECEDF2;
+    border-radius: 10px;
+}
+.team-title{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+}
+.members{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    padding: 100px 100px;
+}
+.member{
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 80%;
+
+}
+
+.member img{
+    width: 100%;
+    height: auto;
+    padding: 10px 0px;
+}
+
+.member h2{
+    width: 100%;
+    padding: 5px 5px;
+    font-weight: 700;
+    text-align: center;
+}
+.icon{
+    font-size: 30px;
+    color:#FF900E ;
+    text-align: center;
+}
+.member p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #727272;
+    text-align: center;
+}
+
+
+
+/* Our Team part End */
 /* Sponsor Part Start */
 
 #sponsor{
@@ -270,8 +323,11 @@ a{
     .container , .fact-items{
         flex-direction: column;
     }
-    #navbar , .nav-menu ul{
+    #navbar{
         padding-top: 20px;
+        flex-direction: column;
+    }
+    .nav-menu ul{
         flex-direction: column;
     }
     .nav-logo a{
@@ -288,6 +344,9 @@ a{
     .banner-img img{
         margin-bottom: 15px;
     }
+    .article{
+        margin-top: 40px;
+    }
     .feature-items{
         display: flex;
         flex-direction: column;
@@ -301,7 +360,7 @@ a{
         width: 100%;
     }
     .experiance-btn {
-        margin-left: 700px;
+        margin-left: 645px;
         margin-top: -250px;
         padding: 24px 105px;
     }
@@ -316,6 +375,15 @@ a{
         align-items: center;
     }
     .company img{
+        margin-top: 30px;
+    }
+    .our-team{
+        text-align: center;
+    }
+    .members{
+        grid-template-columns: repeat( 1, 1fr);
+    }
+    .member{
         margin-top: 30px;
     }
     
