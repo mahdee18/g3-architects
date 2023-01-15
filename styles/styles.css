@@ -19,6 +19,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 /* Common CSS */
 
@@ -63,9 +64,12 @@ a{
 #banner{
     background: rgba(255, 144, 14, 0.1);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    padding-bottom: 30px;
+}
+.banner-item{
+    width: 80%;
+    margin: 0 auto;
+
 }
 .banner-text{
     text-align: center;
@@ -92,15 +96,122 @@ a{
     background: white;
     transition: all linear .5s;
 }
-.banner-img img{
-    margin: 50px 20%;
+.banner-img{
+    margin-top: 30px;
 }
 /* Banner */
+
+/* Features Part Start*/
+
+.feature-items{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+}
+.feature-img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 15px;
+}
+.feature-sub-title{
+    margin: 25px 0px;
+    color: #727272;
+}
+.gray{
+     color: #727272;;
+}
+.black{
+    color: #131313;
+}
+.golden{
+    color: #FF900E;
+}
+/* Features Part End*/
+
+
+/* Experiance Part Start */
+#experiance{
+    padding-top: 130px;
+}
+.text-part{
+    padding-right: 80px;
+}
+.header-title{
+    font-size: 35px;
+    font-weight: 700;
+}
+.border{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.article{
+    margin-left: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 10px #f3efef;
+}
+.experiance-btn {
+    padding: 24px 32px;
+    background: rgb(255, 144, 14);
+    position: relative;
+    top: 287px;
+    right: 345px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* Experiance Part End */
+
+/* Some Facts part Start */
+
+#some-facts{
+    width: 80%;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+.facts-title{
+    font-weight: 700;
+    font-size: 35px;
+}
+.facts-sub-title{
+    color: #727272;
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+.fact-items{
+    display: flex;
+    justify-content: space-around;
+}
+.item{
+    text-align: center;
+    padding: 25px 25px;
+    border-radius: 5px;
+    border: 2px solid #FF900E;
+}
+.item:hover{
+    background: #FF900E;
+    color: white;
+    transition: all linear 0.5s;
+}
+.amount{
+    font-size: 35px;
+}
+/* Some Facts part End */
 
 
 /* Responsive (Mobile Device)  */
 
 @media only screen and (max-width:576px) {
+    .container , .fact-items{
+        flex-direction: column;
+    }
     #navbar , .nav-menu ul{
         padding-top: 20px;
         flex-direction: column;
@@ -119,6 +230,30 @@ a{
     .banner-img img{
         margin-bottom: 15px;
     }
+    .feature-items{
+        display: flex;
+        flex-direction: column;
+    }
+    .feature-img{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .img-part img{
+        margin-top: 30px;
+        width: 100%;
+    }
+    .experiance-btn {
+        margin-left: 700px;
+        margin-top: -250px;
+    }
+    #some-facts{
+        margin-top: 200px;
+    }
+    .item{
+        margin-top: 10px;
+    }
+    
+    
 }
 
 /* Responsive (Mobile Device)  */
